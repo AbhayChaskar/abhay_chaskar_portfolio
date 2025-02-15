@@ -2,10 +2,11 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, Clone the repo in your local and install the required dependencies
+First, Clone the repo in your local and install the required dependencies using below command
 
 ```bash
 npm install
+```
 
 and run the development server:
 
@@ -13,10 +14,6 @@ and run the development server:
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
