@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React, { useState, useEffect, useRef} from 'react'
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import { FiDownload } from "react-icons/fi";
@@ -8,12 +8,25 @@ import { IoClose } from "react-icons/io5";
 
 const Navbar = () => {
     const sideMenuRef = useRef()
-    
+    const [pdfUrl, setPdfUrl] = useState("");
     const openMenu = () => {
         sideMenuRef.current.style.transform = 'translateX(-16rem)';
     }
     const closeMenu = () => {
         sideMenuRef.current.style.transform = 'translateX(16rem)';
+    }
+
+    useEffect(()=>{
+        setPdfUrl("/abhay_chaskar_resume.pdf");
+    },[])
+
+    const handleResumeDownload = () =>{
+        const link = document.createElement('a');
+        link.href = pdfUrl;
+        link.download = 'Abhay_Chaskar_Resume.pdf';
+        document.body.appendChild(link);
+        link.click();s
+        document.body.removeChild(link);
     }
 
   return (
@@ -38,7 +51,7 @@ const Navbar = () => {
             <button>
                 <IoMoonSharp size={20}/>
             </button>
-            <a href='' className='hidden lg:flex items-center gap-3 px-6 py-2.5 border border-gray-400 rounded-full ml-4'>Resume <FiDownload size={21}/></a>
+            <a href='#resume' className='hidden lg:flex items-center gap-3 px-6 py-2.5 border border-gray-400 rounded-full ml-4' onClick={handleResumeDownload}>Resume <FiDownload size={21}/></a>
             <button className='block md:hidden ml-3'>
                 <CgMenuRightAlt size={27} onClick={openMenu}/>
             </button>
@@ -55,6 +68,7 @@ const Navbar = () => {
             <li><a href='' onClick={closeMenu}>Experience</a></li>
             <li><a href='' onClick={closeMenu}>Projects</a></li>
             <li><a href='#contact' onClick={closeMenu}>Contact</a></li>
+            <li><a href='#resume' onClick={handleResumeDownload} className='flex gap-2'>Resume <FiDownload size={21}/></a></li>
         </ul>
     </nav>
     </>
