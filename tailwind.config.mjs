@@ -12,13 +12,18 @@ export default {
       colors: {
         // background: "var(--background)",
         // foreground: "var(--foreground)",
-        lightHover: '#fcf4ff',
+        lightHover: '#D3D3D3',
         darkHover: '#2a004a',
         darkTheme: '#1101F',
       },
       fontFamily: {
         Outfit: ["Outfit", "sans-serif"],
         Ovo: ["Ovo", "serif"]
+      },
+      boxShadow: {
+        'black': '4px 4px 0 #000',
+        'white': '4px 4px 0 #fff',
+        'gray': '4px 4px 0 #808080',
       }
     },
   },

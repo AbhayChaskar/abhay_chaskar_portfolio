@@ -8,6 +8,7 @@ import { IoClose } from "react-icons/io5";
 
 const Navbar = () => {
     const sideMenuRef = useRef()
+    const [isScroll, setIsScroll] = useState(false);
     const [pdfUrl, setPdfUrl] = useState("");
     const [isPdfDownload, setPdfDownload] = useState(false);
 
@@ -19,6 +20,13 @@ const Navbar = () => {
     }
 
     useEffect(()=>{
+        window.addEventListener('scroll', () =>{
+            if(scrollY > 50){
+                setIsScroll(true)
+            }else{
+                setIsScroll(false)
+            }
+        })
         setPdfUrl("/abhay_chaskar_resume.pdf");
     },[])
 
@@ -41,17 +49,17 @@ const Navbar = () => {
         <Image src= {assets.navbar_background} alt='navbar_background_image' className='w-full'/>
     </div> */}
 
-    <nav className='w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50'>
+    <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll ? 'bg-white bg-opacity-50 backdrop-blur-lg shadow-sm' : ''}`}>
         <a href='' className='w-28 cursor-pointer mr-14'>
             abhay.chaskar
         </a>
-        <ul className='hidden md:flex items-center gap-6 lg:gap-8 px-12 py-2.5 border border-gray rounded-full bg-white shadow-sm shadow-md bg-opacity-50'>
-            <li><a href=''>Home</a></li>
-            <li><a href=''>About me</a></li>
-            <li><a href=''>Skills</a></li>
-            <li><a href=''>Experience</a></li>
-            <li><a href=''>Projects</a></li>
-            <li><a href=''>Contact</a></li>
+        <ul className={`hidden md:flex items-center gap-6 lg:gap-8 px-12 py-2.5 rounded-full ${isScroll ? "" : "border border-gray bg-white shadow-sm shadow-md bg-opacity-50"}`}>
+            <li><a href='#home'>Home</a></li>
+            <li><a href='#about'>About</a></li>
+            <li><a href='#skills'>Skills</a></li>
+            <li><a href='#experience'>Experience</a></li>
+            <li><a href='#projects'>Projects</a></li>
+            <li><a href='#contact'>Contact</a></li>
         </ul>
         <div className='flex items-center gap-4'>
             <button>
@@ -73,17 +81,17 @@ const Navbar = () => {
             <div className='absolute right-5 top-4'>
                 <IoClose size={30} className='cursor-pointer' onClick={closeMenu}/>
             </div>
-            <li><a href='' onClick={closeMenu}>Home</a></li>
-            <li><a href='' onClick={closeMenu}>About me</a></li>
-            <li><a href='' onClick={closeMenu}>Skills</a></li>
-            <li><a href='' onClick={closeMenu}>Experience</a></li>
-            <li><a href='' onClick={closeMenu}>Projects</a></li>
+            <li><a href='#home' onClick={closeMenu}>Home</a></li>
+            <li><a href='#about' onClick={closeMenu}>About</a></li>
+            <li><a href='#skills' onClick={closeMenu}>Skills</a></li>
+            <li><a href='#experience' onClick={closeMenu}>Experience</a></li>
+            <li><a href='#projects' onClick={closeMenu}>Projects</a></li>
             <li><a href='#contact' onClick={closeMenu}>Contact</a></li>
             <li> { isPdfDownload ? (
-                <div className='flex gap-2 text-green-500'>
+                <div className='text-green-600'>
                     Downloading...
                 </div>
-                ) : <a href='#resume' onClick={handleResumeDownload} className='flex gap-2'>Resume <FiDownload size={21}/></a> }
+                ) : <a href='#resume' onClick={handleResumeDownload} className='flex gap-2 items-center'>Resume <FiDownload size={21}/></a> }
             </li>
         </ul>
     </nav>
