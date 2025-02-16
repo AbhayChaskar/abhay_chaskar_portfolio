@@ -9,6 +9,8 @@ import { IoClose } from "react-icons/io5";
 const Navbar = () => {
     const sideMenuRef = useRef()
     const [pdfUrl, setPdfUrl] = useState("");
+    const [isPdfDownload, setPdfDownload] = useState(false);
+
     const openMenu = () => {
         sideMenuRef.current.style.transform = 'translateX(-16rem)';
     }
@@ -25,8 +27,12 @@ const Navbar = () => {
         link.href = pdfUrl;
         link.download = 'Abhay_Chaskar_Resume.pdf';
         document.body.appendChild(link);
-        link.click();s
+        link.click();
         document.body.removeChild(link);
+        setPdfDownload(true);
+        setTimeout(() => {
+            setPdfDownload(false);
+        }, 2000);
     }
 
   return (
@@ -51,7 +57,12 @@ const Navbar = () => {
             <button>
                 <IoMoonSharp size={20}/>
             </button>
-            <a href='#resume' className='hidden lg:flex items-center gap-3 px-6 py-2.5 border border-gray-400 rounded-full ml-4' onClick={handleResumeDownload}>Resume <FiDownload size={21}/></a>
+            { isPdfDownload ? (
+                <div className='hidden lg:flex items-center gap-2 px-3.5 py-2.5 border border-green-500 rounded-full ml-4'>
+                    Downloading...
+                </div>
+                ) : <a href='#resume' className='hidden lg:flex items-center gap-3 px-6 py-2.5 border border-gray-400 rounded-full ml-4' onClick={handleResumeDownload}>Resume <FiDownload size={21}/></a>
+            }
             <button className='block md:hidden ml-3'>
                 <CgMenuRightAlt size={27} onClick={openMenu}/>
             </button>
@@ -68,7 +79,12 @@ const Navbar = () => {
             <li><a href='' onClick={closeMenu}>Experience</a></li>
             <li><a href='' onClick={closeMenu}>Projects</a></li>
             <li><a href='#contact' onClick={closeMenu}>Contact</a></li>
-            <li><a href='#resume' onClick={handleResumeDownload} className='flex gap-2'>Resume <FiDownload size={21}/></a></li>
+            <li> { isPdfDownload ? (
+                <div className='flex gap-2 text-green-500'>
+                    Downloading...
+                </div>
+                ) : <a href='#resume' onClick={handleResumeDownload} className='flex gap-2'>Resume <FiDownload size={21}/></a> }
+            </li>
         </ul>
     </nav>
     </>
