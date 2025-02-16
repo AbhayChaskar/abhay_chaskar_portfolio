@@ -1,11 +1,13 @@
 import navbar_background from './navbar_background.png';
 import footer_background from './footer_background.png';
 import profile_background from './profile_background.png';
+import profile_image from './profile_image.jpg';
 
 export const assets = {
     navbar_background,
     footer_background,
-    profile_background
+    profile_background,
+    profile_image,
 };
 
 export const workData = [
