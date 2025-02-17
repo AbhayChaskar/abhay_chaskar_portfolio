@@ -66,10 +66,10 @@ const Navbar = () => {
                 <IoMoonSharp size={20}/>
             </button>
             { isPdfDownload ? (
-                <div className='hidden lg:flex items-center gap-2 px-3.5 py-2 border border-green-500 rounded-full ml-4'>
+                <div className='hidden lg:flex items-center gap-2 px-3.5 py-2 border border-gray-400 text-black/70 rounded-full ml-4'>
                     Downloading...
                 </div>
-                ) : <a href='#resume' className='hidden lg:flex items-center gap-3 px-6 py-2 border border-gray-400 rounded-full ml-4' onClick={handleResumeDownload}>Resume <FiDownload size={21}/></a>
+                ) : <a href='#resume' className='hidden lg:flex items-center gap-3 px-6 py-2 border border-gray-400 rounded-full ml-4 hover:bg-lightHover duration-500' onClick={handleResumeDownload}>Resume <FiDownload size={21}/></a>
             }
             <button className='block md:hidden ml-3'>
                 <CgMenuRightAlt size={27} onClick={openMenu}/>
@@ -88,7 +88,7 @@ const Navbar = () => {
             <li><a href='#projects' onClick={closeMenu}>Projects</a></li>
             <li><a href='#contact' onClick={closeMenu}>Contact</a></li>
             <li> { isPdfDownload ? (
-                <div className='text-green-600'>
+                <div className='text-black/70'>
                     Downloading...
                 </div>
                 ) : <a href='#resume' onClick={handleResumeDownload} className='flex gap-2 items-center'>Resume <FiDownload size={21}/></a> }

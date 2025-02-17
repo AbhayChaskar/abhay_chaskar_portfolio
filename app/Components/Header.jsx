@@ -20,9 +20,9 @@ const Header = () => {
 
       <h3 className='flex item-end gap-1.5 font-Ovo text-xl md:text-2xl mb-3 '>Hey! I'm Abhay Chaskar <PiHandPeace size={27}/></h3>
       <h3 className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>Frontend/UI Developer</h3>
-      <p className='max-w-2xl mx-auto'>I have 4+ years of full time experience in the IT industry, where i have developed and managed SPA's using ReactJS and related libraries or frameworks.</p>
+      <p className='max-w-2xl mx-auto'>I have over 4 years of full-time experience in the IT industry, where I have developed and managed SPAs using ReactJS and related libraries or frameworks.</p>
       <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
-        <a href='' className='px-6 py-2 border border-white rounded-full bg-black text-white flex items-center' onClick={handleConnectButton}>Let's Connect <GrLinkedin className='rounded-full w-10' size={20}/></a>
+        <a href='' className='py-2.5 px-6 w-max flex items-center justify-between bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500' onClick={handleConnectButton}>Let's Connect <GrLinkedin className='rounded-full w-10' size={20}/></a>
       </div>
     </div>
   )
