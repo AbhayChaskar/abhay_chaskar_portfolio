@@ -1,15 +1,18 @@
 import React from 'react'
+import { assets } from '@/assets/assets';
+import Image from 'next/image';
 import { IoIosMail } from "react-icons/io";
 import { BsGithub } from "react-icons/bs";
 import { GrLinkedin } from "react-icons/gr";
 import { FaInstagram, FaRegCopyright } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className='mt-20'>
+    <div className='mt-12'>
         <div className='text-center'>
-            <a href='' className='w-36 cursor-pointer mx-auto mb-2'>
-                abhay.chaskar
+            <a href='https://www.youtube.com/@Melvis47' target='_blank' className='w-36 cursor-pointer mx-auto mb-2'>
+                <Image src= {assets.logo} alt='logo' className='w-24 cursor-pointer mx-auto mb-2'/>
             </a>
             <div className='w-max flex items-center gap-2 mx-auto'>
                 <IoIosMail size={27} className='text-black/80'/> abhayrc.521@gmail.com
@@ -20,7 +23,8 @@ const Footer = () => {
             <ul className='flex items-center gap-10 justify-center mt-4 sm:mt-0'>
                 <li><a href='https://github.com/AbhayChaskar' target='_blank'><BsGithub size={28}/></a></li>
                 <li><a href='https://www.linkedin.com/in/abhayrc05' target='_blank'><GrLinkedin size={26} className='text-blue-500'/></a></li>
-                <li><a href='https://www.instagram.com/abhay.rc_05/' target='_blank'><FaInstagram size={30} className='text-red-500'/></a></li>
+                <li><a href='https://www.youtube.com/@Melvis47' target='_blank'><FaYoutube size={30} className='text-red-500'/></a></li>
+                <li><a href='https://www.instagram.com/abhay.rc_05' target='_blank'><FaInstagram size={30} className='text-red-500'/></a></li>
             </ul>
         </div>
     </div>

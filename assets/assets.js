@@ -11,6 +11,7 @@ import figma from './figma.png';
 import devtools from './devtools.png';
 import git from './git.png';
 import salesforce from './salesforce.png';
+import logo from './logo.png';
 
 export const assets = {
     navbar_background,
@@ -24,7 +25,8 @@ export const assets = {
     vscode,
     figma,
     devtools,
-    git
+    git,
+    logo
 };
 
 export const workData = [

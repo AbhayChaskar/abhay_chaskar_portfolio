@@ -45,13 +45,9 @@ const Navbar = () => {
 
   return (
     <>
-    {/* <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]'>
-        <Image src= {assets.navbar_background} alt='navbar_background_image' className='w-full'/>
-    </div> */}
-
-    <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll ? 'bg-white bg-opacity-50 backdrop-blur-lg shadow-sm' : ''}`}>
-        <a href='' className='w-28 cursor-pointer mr-14'>
-            abhay.chaskar
+    <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-1 flex items-center justify-between z-50 ${isScroll ? 'bg-white bg-opacity-50 backdrop-blur-lg shadow-sm' : ''}`}>
+        <a href='https://www.youtube.com/@Melvis47' target='_blank'>
+            <Image src= {assets.logo} alt='logo' className='w-20 cursor-pointer mr-14'/>
         </a>
         <ul className={`hidden md:flex items-center gap-6 lg:gap-8 px-12 py-2.5 rounded-full ${isScroll ? "" : "border border-gray bg-white shadow-md bg-opacity-50"}`}>
             <li><a href='#home'>Home</a></li>
