@@ -9,9 +9,19 @@ import project_icon from './project_icon.png';
 import vscode from './vscode.png';
 import figma from './figma.png';
 import devtools from './devtools.png';
-import git from './git.png';
-import salesforce from './salesforce.png';
 import logo from './logo.png';
+import html from './html.svg';
+import css from './css.svg';
+import js from './js.svg';
+import reactjs from './reactjs.png';
+import nextjs from './nextjs.svg';
+import electronjs from './electronjs.png';
+import sql from './sql.svg';
+import salesforce from './salesforce.png';
+import webpack from './webpack.png';
+import jira from './jira.svg';
+import restapi from './restapi.png';
+import git from './git.png';
 
 export const assets = {
     navbar_background,
@@ -25,8 +35,19 @@ export const assets = {
     vscode,
     figma,
     devtools,
+    logo,
+    html,
+    css,
+    js,
+    reactjs,
+    nextjs,
+    electronjs,
+    sql,
+    salesforce,
+    webpack,
+    jira,
+    restapi,
     git,
-    logo
 };
 
 export const workData = [
@@ -67,6 +88,27 @@ export const infoList = [
 export const toolsData = [
     { icon: assets.vscode, title: 'Vs Code' },
     { icon: assets.figma, title: 'Figma' },
-    { icon: assets.devtools, title: 'React Developer tools' },
+    { icon: assets.devtools, title: 'Chrome Developer tools' },
     { icon: assets.git, title: 'Git/Github' }
 ];
+
+export const experienceData = [
+    { title: 'Frontend Developer', description: 'Developed and maintained the frontend of the website', duration: '2020 - 2021' },
+    { title: 'UI/UX Designer', description: 'Designed and developed the UI/UX of the website', duration: '2019 - 2020' },
+    { title: 'Salesforce Developer', description: 'Developed and maintained the Salesforce CRM', duration: '2018 - 2019' }
+];
+
+export const skillsData = [
+    { icon: assets.html, title: 'HTML 5'},
+    { icon: assets.css, title: 'CSS 3'},
+    { icon: assets.js, title: 'JavaScript'},
+    { icon: assets.reactjs, title: 'ReactJS'},
+    { icon: assets.nextjs, title: 'NextJS'},
+    { icon: assets.electronjs, title: 'ElectronJS'},
+    { icon: assets.sql, title: 'SQL' },
+    { icon: assets.salesforce, title: 'Salesforce Commerce Cloud'},
+    { icon: assets.webpack, title: 'Webpack' },
+    { icon: assets.jira, title: 'Jira tool' },
+    { icon: assets.git, title: 'Git/Github' },
+    { icon: assets.restapi, title: 'RESTful API' },
+]
