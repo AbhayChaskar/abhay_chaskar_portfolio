@@ -13,7 +13,7 @@ import logo from './logo.png';
 import html from './html.svg';
 import css from './css.svg';
 import js from './js.svg';
-import reactjs from './reactjs.png';
+import reactjs from './reactjs.webp';
 import nextjs from './nextjs.svg';
 import electronjs from './electronjs.png';
 import sql from './sql.svg';
@@ -22,6 +22,7 @@ import webpack from './webpack.png';
 import jira from './jira.svg';
 import restapi from './restapi.png';
 import git from './git.png';
+import github from './github.png';
 
 export const assets = {
     navbar_background,
@@ -48,6 +49,7 @@ export const assets = {
     jira,
     restapi,
     git,
+    github
 };
 
 export const workData = [
@@ -89,7 +91,7 @@ export const toolsData = [
     { icon: assets.vscode, title: 'Vs Code' },
     { icon: assets.figma, title: 'Figma' },
     { icon: assets.devtools, title: 'Chrome Developer tools' },
-    { icon: assets.git, title: 'Git/Github' }
+    { icon: assets.github, title: 'Github Desktop' }
 ];
 
 export const experienceData = [
@@ -104,11 +106,11 @@ export const skillsData = [
     { icon: assets.js, title: 'JavaScript'},
     { icon: assets.reactjs, title: 'ReactJS'},
     { icon: assets.nextjs, title: 'NextJS'},
+    { icon: assets.restapi, title: 'RESTful API' },
     { icon: assets.electronjs, title: 'ElectronJS'},
     { icon: assets.sql, title: 'SQL' },
-    { icon: assets.salesforce, title: 'Salesforce Commerce Cloud'},
+    { icon: assets.salesforce, title: 'SFCC'},
     { icon: assets.webpack, title: 'Webpack' },
     { icon: assets.jira, title: 'Jira tool' },
     { icon: assets.git, title: 'Git/Github' },
-    { icon: assets.restapi, title: 'RESTful API' },
 ]
