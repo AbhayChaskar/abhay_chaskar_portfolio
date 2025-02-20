@@ -23,6 +23,9 @@ import jira from './jira.svg';
 import restapi from './restapi.png';
 import git from './git.png';
 import github from './github.png';
+import accenture from './accenture.svg';
+import infosys from './infosys.png';
+import neosoft from './neosoft.jpeg';
 
 export const assets = {
     navbar_background,
@@ -49,7 +52,10 @@ export const assets = {
     jira,
     restapi,
     git,
-    github
+    github,
+    accenture,
+    infosys,
+    neosoft
 };
 
 export const workData = [
@@ -95,9 +101,9 @@ export const toolsData = [
 ];
 
 export const experienceData = [
-    { title: 'Frontend Developer', description: 'Developed and maintained the frontend of the website', duration: '2020 - 2021' },
-    { title: 'UI/UX Designer', description: 'Designed and developed the UI/UX of the website', duration: '2019 - 2020' },
-    { title: 'Salesforce Developer', description: 'Developed and maintained the Salesforce CRM', duration: '2018 - 2019' }
+    { icon: assets.accenture, title: 'Senior Analyst', description: 'Developed and maintained the Salesforce CRM', duration: 'Nov 2024 - Present' },
+    { icon: assets.infosys, title: 'Systems Engineer', description: 'Designed and developed the UI/UX of the website', duration: 'Mar 2022 - Oct 2024' },
+    { icon: assets.neosoft, title: 'Software Engineer', description: 'Undergone through Full Stack Training', duration: 'July 2021 - Mar 2022' }
 ];
 
 export const skillsData = [
