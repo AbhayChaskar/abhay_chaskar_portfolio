@@ -9,10 +9,9 @@ const Experience = () => {
 
          <div className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
           <div className='flex-1'>
-              {/* <p className='mb-10 mx-auto'>
-                  An experienced Frontend Developer with strong discipline, a team-oriented mindset, excellent problem-solving abilities and great communication skills.
-                  The one Who always seeks a challenging role to contribute and grow within a reputable organization
-              </p> */}
+              <p className='mb-10 mx-auto'>
+               With 4 years of experience in development and expertise in both Front-end & Back-end technologies, I have been delivering user experience & client-focused projects. Enhanced load times by 30% and had an 85% client retention rate through effective communication and co-ordination with cross-functional teams.
+              </p>
 
               <ul className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 '>
                   {experienceData.map(({icon, title, description, duration}, index) => (

@@ -9,6 +9,8 @@ import project_icon from './project_icon.png';
 import vscode from './vscode.png';
 import figma from './figma.png';
 import devtools from './devtools.png';
+import github from './github.png';
+import postman from './postman.svg';
 import logo from './logo.png';
 import html from './html.svg';
 import css from './css.svg';
@@ -18,11 +20,10 @@ import nextjs from './nextjs.svg';
 import electronjs from './electronjs.png';
 import sql from './sql.svg';
 import salesforce from './salesforce.png';
-import webpack from './webpack.png';
+import python from './python.png';
 import jira from './jira.svg';
 import restapi from './restapi.png';
 import git from './git.png';
-import github from './github.png';
 import accenture from './accenture.svg';
 import infosys from './infosys.png';
 import neosoft from './neosoft.jpeg';
@@ -39,6 +40,8 @@ export const assets = {
     vscode,
     figma,
     devtools,
+    github,
+    postman,
     logo,
     html,
     css,
@@ -48,11 +51,10 @@ export const assets = {
     electronjs,
     sql,
     salesforce,
-    webpack,
+    python,
     jira,
     restapi,
     git,
-    github,
     accenture,
     infosys,
     neosoft
@@ -97,7 +99,8 @@ export const toolsData = [
     { icon: assets.vscode, title: 'Vs Code' },
     { icon: assets.figma, title: 'Figma' },
     { icon: assets.devtools, title: 'Chrome Developer tools' },
-    { icon: assets.github, title: 'Github Desktop' }
+    { icon: assets.github, title: 'Github Desktop' },
+    { icon: assets.postman, title: 'Postman' }
 ];
 
 export const experienceData = [
@@ -113,10 +116,10 @@ export const skillsData = [
     { icon: assets.reactjs, title: 'ReactJS'},
     { icon: assets.nextjs, title: 'NextJS'},
     { icon: assets.restapi, title: 'RESTful API' },
-    { icon: assets.electronjs, title: 'ElectronJS'},
+    { icon: assets.salesforce, title: 'Commerce Cloud' },
+    { icon: assets.python, title: 'python' },
     { icon: assets.sql, title: 'SQL' },
-    { icon: assets.salesforce, title: 'SFCC'},
-    { icon: assets.webpack, title: 'Webpack' },
-    { icon: assets.jira, title: 'Jira tool' },
+    { icon: assets.electronjs, title: 'ElectronJS'},
     { icon: assets.git, title: 'Git/Github' },
+    { icon: assets.jira, title: 'Jira tool' },
 ]
