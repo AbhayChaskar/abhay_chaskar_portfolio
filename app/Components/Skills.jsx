@@ -1,6 +1,7 @@
 import React from 'react'
 import { skillsData } from '@/assets/assets'
 import Image from 'next/image'
+
 const Skills = () => {
   return (
     <div id="skills" className='w-full px-[12%] py-10 scroll-mt-20'>

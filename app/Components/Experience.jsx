@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { assets, experienceData, infoList, toolsData } from '@/assets/assets'
+import { assets, experienceData } from '@/assets/assets'
 
 const Experience = () => {
   return (
@@ -14,16 +14,20 @@ const Experience = () => {
               </p>
 
               <ul className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 '>
-                  {experienceData.map(({icon, title, description, duration}, index) => (
+                  {experienceData.map((experience, index) => (
                     <>
                       <li key={index} className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-gray'>
                           <div className='flex items-center mt-2 gap-20'>
-                              <Image src={icon} alt={title} className='flex w-16'/>
-                              <p className='text-black/50 mx-auto'>{duration}</p>
+                              <Image src={experience.icon} alt={experience.title} className='flex w-16'/>
+                              <p className='text-black/50 mx-auto'>{experience.duration}</p>
                           </div>
                           <div>
-                            <h3 className='my-2 font-semibold text-gray-600'>{title}</h3>
-                            <p className='text-gray-500 text-sm'>{description}</p>
+                            <h3 className='my-2 font-semibold text-gray-600'>{experience.title}</h3>
+                            <ul className='list-disc list-inside'>
+                              {experience.description.map((description, descriptionIndex) => (
+                                <li key={descriptionIndex} className='text-gray-500 text-sm'>{description}</li>
+                              ))}
+                            </ul>
                           </div>
                       </li>
                     </>

@@ -104,9 +104,9 @@ export const toolsData = [
 ];
 
 export const experienceData = [
-    { icon: assets.accenture, title: 'Senior Analyst', description: 'Developed and maintained the Salesforce CRM', duration: 'Nov 2024 - Present' },
-    { icon: assets.infosys, title: 'Systems Engineer', description: 'Designed and developed the UI/UX of the website', duration: 'Mar 2022 - Oct 2024' },
-    { icon: assets.neosoft, title: 'Software Engineer', description: 'Undergone through Full Stack Training', duration: 'July 2021 - Mar 2022' }
+    { icon: assets.accenture, title: 'Senior Analyst', description: ['Developed and maintained the Salesforce CRM'], duration: 'Nov 2024 - Present' },
+    { icon: assets.infosys, title: 'Systems Engineer', description: ['Developed and maintained the Salesforce CRM'], duration: 'Mar 2022 - Oct 2024' },
+    { icon: assets.neosoft, title: 'Software Engineer', description: ['Developed and maintained the Salesforce CRM'], duration: 'July 2021 - Mar 2022' }
 ];
 
 export const skillsData = [
