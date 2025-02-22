@@ -5,3 +5,17 @@
 *{
   font-family: Outfit;
 }
+
+.custom-scrollbar::-webkit-scrollbar{
+  width: 10px;
+  height: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb{
+  background-color: #777777;
+  border-radius: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track{
+  background: #ffffff;
+}

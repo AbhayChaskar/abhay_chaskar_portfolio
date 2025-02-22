@@ -9,7 +9,7 @@ const Experience = () => {
 
          <div className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
           <div className='flex-1'>
-              <p className='mb-10 mx-auto'>
+              <p className='text-center mx-auto mb-10'>
                With 4 years of experience in development and expertise in both Front-end & Back-end technologies, I have been delivering user experience & client-focused projects. Enhanced load times by 30% and had an 85% client retention rate through effective communication and co-ordination with cross-functional teams.
               </p>
 
