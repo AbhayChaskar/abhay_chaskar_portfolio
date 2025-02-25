@@ -17,7 +17,7 @@ const Contact = () => {
   }, [username])
   
   return (
-    <div id="contact" className='w-full px-[12%] py-10 scroll-mt-20'>
+    <div id="contact" className='w-full px-[12%] py-12 scroll-mt-20'>
         <h2 className='text-center text-5xl font-Ovo'>Contact Me</h2>
         <p className='text-center max-w-2xl mx-auto mt-16 mb-12'>
             Whether you have a questions, want to collaborate on a project or just want to give a feedback then my inbox is always open. I'd love to hear from you ^-^
