@@ -4,8 +4,8 @@ import Image from 'next/image'
 
 const Skills = () => {
   return (
-    <div id="skills" className='w-full px-[12%] py-10 scroll-mt-20'>
-        <h2 className='text-center my-8 text-5xl font-Ovo'>Skills</h2>
+    <div id="skills" className='w-full px-[12%] py-5 scroll-mt-20'>
+        <h2 className='text-center my-4 text-5xl font-Ovo'>Skills</h2>
         {/* <h4 className='my-6 text-gray-600 font-Ovo'>Skills I Have</h4> */}
         <ul className='w-[80%] mb-10 mt-20 mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 items-center'>
             {skillsData.map(({icon, title}, index) => (
