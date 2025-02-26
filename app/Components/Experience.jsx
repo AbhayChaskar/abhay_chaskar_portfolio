@@ -13,7 +13,7 @@ const Experience = () => {
                With 4 years of experience in development and expertise in both Front-end & Back-end technologies, I have been delivering user experience & client-focused projects. Enhanced load times by 30% and had an 85% client retention rate through effective communication and co-ordination with cross-functional teams.
               </p>
 
-              <ul className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
+              <ul className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6'>
                   {experienceData.map((experience, index) => (
                     <>
                       <li key={index} className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-gray'>
