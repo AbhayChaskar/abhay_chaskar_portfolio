@@ -60,36 +60,25 @@ export const assets = {
     neosoft
 };
 
-export const workData = [
+export const projectData = [
     {
-        title: 'Frontend project',
+        title: 'My Blog App',
         description: 'Web Design',
-        bgImage: '/work-1.png',
+        bgImage: '/.png',
     },
     {
-        title: 'Geo based app',
+        title: 'KyaLoo Store App',
         description: 'Mobile App',
-        bgImage: '/work-2.png',
+        bgImage: '/.png',
     },
     {
-        title: 'Photography site',
+        title: 'My Portfolio',
         description: 'Web Design',
-        bgImage: '/work-3.png',
-    },
-    {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
+        bgImage: '/.png',
     },
 ]
 
-export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.ui_icon, title: 'UI design', description: 'UI design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.ui_icon, title: 'API Integration', description: 'UI/UX design focuses', link: '' },
-]
-
-export const infoList = [
+export const aboutList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'JavaScript, React Js, Next Js, SFCC' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Bachelor of Engineering in Computer Science' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built and Deployed 3 Projects' }
