@@ -62,19 +62,25 @@ export const assets = {
 
 export const projectData = [
     {
-        title: 'My Blog App',
-        description: 'Web Design',
-        bgImage: '/.png',
-    },
-    {
-        title: 'KyaLoo Store App',
-        description: 'Mobile App',
-        bgImage: '/.png',
-    },
-    {
         title: 'My Portfolio',
-        description: 'Web Design',
-        bgImage: '/.png',
+        description: 'NextJS',
+        bgImage: '/profile_image.jpg',
+        link:'https://github.com/AbhayChaskar/abhay_chaskar_portfolio'
+    },
+    {
+        title: 'Admin panel',
+        description: 'ReactJS',
+        bgImage: '/profile_image.jpg',
+    },
+    {
+        title: 'KyaLoo Store',
+        description: 'Redux & APIs',
+        bgImage: '/profile_image.jpg',
+    },
+    {
+        title: 'LikhteJao Blog',
+        description: 'PostgreSQL',
+        bgImage: '/profile_image.jpg',
     },
 ]
 
