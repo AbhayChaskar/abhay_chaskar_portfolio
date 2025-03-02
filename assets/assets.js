@@ -64,28 +64,28 @@ export const projectData = [
     {
         title: 'My Portfolio',
         description: 'NextJS',
-        bgImage: '/profile_image.jpg',
+        bgImage: '/portfolio.jpg',
         repoLink:'https://github.com/AbhayChaskar/abhay_chaskar_portfolio',
-        deployLink:''
-    },
-    {
-        title: 'Admin panel',
-        description: 'ReactJS',
-        bgImage: '/profile_image.jpg',
-        repoLink:'',
         deployLink:''
     },
     {
         title: 'KyaLoo Store',
         description: 'Redux & APIs',
-        bgImage: '/profile_image.jpg',
+        bgImage: '/kyaloo_store.jpg',
+        repoLink:'',
+        deployLink:''
+    },
+    {
+        title: 'Admin panel',
+        description: 'ReactJS',
+        bgImage: '/admin_dashboard.jpg',
         repoLink:'',
         deployLink:''
     },
     {
         title: 'LikhteJao Blog',
         description: 'PostgreSQL',
-        bgImage: '/profile_image.jpg',
+        bgImage: '/likhtejao_blog.jpg',
         repoLink:'',
         deployLink:''
     },

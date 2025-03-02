@@ -20,8 +20,8 @@ const Projects = () => {
 
       <div className='w-[80%] mb-10 mt-20 mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-20 items-center'>
         {projectData.map((project, index) =>(
-          <div key={index} style={{backgroundImage: `url(${project.bgImage})`}} className='aspect-square w-60 bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group'>
-            <div className='bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-6'>
+          <div key={index} style={{backgroundImage: `url(${project.bgImage})`}} className='aspect-square w-60 bg-no-repeat bg-cover bg-center rounded-lg relative hover:shadow-lg cursor-pointer group'>
+            <div className='bg-white w-10/12 rounded-md absolute bottom-4 left-1/2 -translate-x-1/2 py-2 px-4 flex items-center justify-between duration-500 group-hover:bottom-5'>
               <div>
                 <h2 className='font-semibold'>{project.title}</h2>
                 <a href={project.repoLink} target='_blank' className='text-sm text-black/70 hover:text-blue-600'>Source Code</a>
