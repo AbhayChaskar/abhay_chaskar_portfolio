@@ -65,22 +65,29 @@ export const projectData = [
         title: 'My Portfolio',
         description: 'NextJS',
         bgImage: '/profile_image.jpg',
-        link:'https://github.com/AbhayChaskar/abhay_chaskar_portfolio'
+        repoLink:'https://github.com/AbhayChaskar/abhay_chaskar_portfolio',
+        deployLink:''
     },
     {
         title: 'Admin panel',
         description: 'ReactJS',
         bgImage: '/profile_image.jpg',
+        repoLink:'',
+        deployLink:''
     },
     {
         title: 'KyaLoo Store',
         description: 'Redux & APIs',
         bgImage: '/profile_image.jpg',
+        repoLink:'',
+        deployLink:''
     },
     {
         title: 'LikhteJao Blog',
         description: 'PostgreSQL',
         bgImage: '/profile_image.jpg',
+        repoLink:'',
+        deployLink:''
     },
 ]
 
@@ -99,9 +106,9 @@ export const toolsData = [
 ];
 
 export const experienceData = [
-    { icon: assets.accenture, title: 'Custom Software Analyst', description: ['Developed Interactive User Interfaces using component based architecture for flexibility.',  'Built APIs in python using Fast API framework.', 'Reviewd code, troubleshoot & debugging the issues for sustainable web applications.', 'Maintained 85% Client retention rate with effective communication & collaboration.', 'Generated ER diagrams using dbdiagram tool based on Data models.', 'Delivered a reliable product with all features & attained 95% client satisfaction rate.'], duration: 'Nov 2024 - Present' },
-    { icon: assets.infosys, title: 'Systems Engineer', description: ['Designed & developed UI web pages based on wireframes & figma.', 'Used Protected routes, state management, Throttling & debouncing events to enhance web performance & security.', 'API integration & error handling using Asynchronous Code.', 'Designed & Built an exe application using Electron Builder.', 'Increased web performance by 30% & Improved Security for authenticated users.'], duration: 'Mar 2022 - Oct 2024' },
-    { icon: assets.neosoft, title: 'Software Engineer', description: ['Well trained in Frontend technologies, worked and collaborated with team in training project.', 'Designed Pizza delivery app using MERN stack.', 'Used variety of libraries to design webpages like CSS, Bootstrap & MUI.', 'Followed Agile methodologies for seamless delivery of an application.', 'Managing code using version control tools like GIT.', 'Testing Response from RESTful API on Postman.'], duration: 'July 2021 - Mar 2022' }
+    { icon: assets.accenture, title: 'Custom Software Analyst', description: ['Developed Interactive User Interfaces using component based architecture for flexibility.',  'Built APIs in python using Fast API framework.', 'Reviewd code, troubleshoot & debugging the issues for sustainable web applications.', 'Maintained 85% Client retention rate with effective communication & collaboration.', 'Delivered a reliable product with all features & attained 95% client satisfaction rate.'], duration: 'Nov 2024 - Present' },
+    { icon: assets.infosys, title: 'Systems Engineer', description: ['Designed & developed UI web pages based on wireframes & figma.', 'Protected routes, throttling & debouncing events used to enhance web performance & security.', 'API integration & error handling using Asynchronous Code.', 'Built an exe application using Electron Builder.', 'Increased web performance by 30% & Improved Security for authenticated users.'], duration: 'Mar 2022 - Oct 2024' },
+    { icon: assets.neosoft, title: 'Software Engineer', description: ['Well trained in Frontend technologies, worked and collaborated with team in training project.', 'Designed Pizza delivery app using MERN stack.', 'Used variety of libraries to design webpages like CSS, Bootstrap & MUI.', 'Followed Agile methodologies for seamless delivery of an application.', 'Code Management using GIT version control tool.', 'Testing RESTful APIs on Postman.'], duration: 'July 2021 - Mar 2022' }
 ];
 
 export const skillsData = [

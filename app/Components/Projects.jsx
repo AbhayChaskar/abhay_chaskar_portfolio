@@ -1,11 +1,14 @@
-import { projectData } from '@/assets/assets'
 import React from 'react'
+import { projectData } from '@/assets/assets'
+import { useRouter } from "next/navigation";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { IoIosArrowDropright } from "react-icons/io";
 
 const Projects = () => {
+  const router = useRouter();
 
   const handleExploreButton = () => {
-    console.log('Explore button clicked');
+    router.push('https://github.com/AbhayChaskar/');
   }
 
   return (
@@ -21,16 +24,16 @@ const Projects = () => {
             <div className='bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-6'>
               <div>
                 <h2 className='font-semibold'>{project.title}</h2>
-                <p className='text-sm text-black/70'>{project.description}</p>
+                <a href={project.repoLink} target='_blank' className='text-sm text-black/70 hover:text-blue-600'>Source Code</a>
               </div>
-              <div className='rounded-full border border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-black/15 transition '>
-                <a href={project.link} target='_blank' className=''><FaArrowRightLong className='rounded-full w-10' size={20}/></a>
+              <div className='rounded-full border border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] hover:bg-black/20 transition'>
+                <a href={project.deployLink} target='_blank' className=''><FaArrowRightLong className='rounded-full w-10' size={20}/></a>
               </div>
             </div>
           </div>
         ))}
       </div>
-        <a href='' className='py-2.5 px-7 w-max flex items-center justify-center bg-black/80 text-white rounded-full mx-auto my-20 hover:bg-black duration-500' onClick={handleExploreButton}>Explore... <FaArrowRightLong className='rounded-full w-10' size={20}/></a>
+        <a href='' className='py-2 px-6 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500' onClick={handleExploreButton}>Know More <IoIosArrowDropright size={20}/></a>
     </div>
   )
 }
