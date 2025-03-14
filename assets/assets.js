@@ -68,9 +68,9 @@ export const projectData = [
         deployLink:''
     },
     {
-        title: 'KyaLoo Store',
+        title: 'Weardo',
         bgImage: '/kyaloo_store.jpg',
-        repoLink:'https://github.com/AbhayChaskar/kyaLoo_store',
+        repoLink:'https://github.com/AbhayChaskar/weardo',
         deployLink:''
     },
     {
