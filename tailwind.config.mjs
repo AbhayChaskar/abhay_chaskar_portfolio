@@ -14,7 +14,7 @@ export default {
         // foreground: "var(--foreground)",
         lightHover: '#D3D3D3',
         darkHover: '#2a004a',
-        darkTheme: '#1101F',
+        darkTheme: '#121212',
       },
       fontFamily: {
         Outfit: ["Outfit", "sans-serif"],
@@ -27,5 +27,6 @@ export default {
       }
     },
   },
+  darkMode: 'selector',
   plugins: [],
 };
