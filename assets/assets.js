@@ -27,6 +27,7 @@ import git from './git.png';
 import accenture from './accenture.svg';
 import infosys from './infosys.png';
 import neosoft from './neosoft.jpeg';
+import logo_dark from './logo_dark.png';
 
 export const assets = {
     navbar_background,
@@ -57,7 +58,8 @@ export const assets = {
     git,
     accenture,
     infosys,
-    neosoft
+    neosoft,
+    logo_dark,
 };
 
 export const projectData = [
