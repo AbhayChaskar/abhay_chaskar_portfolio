@@ -13,7 +13,7 @@ export default {
         // background: "var(--background)",
         // foreground: "var(--foreground)",
         lightHover: '#D3D3D3',
-        darkHover: '#2a004a',
+        darkHover: '#171717',
         darkTheme: '#121212',
       },
       fontFamily: {

@@ -105,7 +105,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         {/* Side menu for small devices */}
         <ul
           ref={sideMenuRef}
-          className="flex md:hidden flex-col gap-4 px-10 py-20 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-gray-50 transition duration-500 dark:text-white dark:bg-black/95"
+          className="flex md:hidden flex-col gap-4 px-10 py-20 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-gray-50 transition duration-500 dark:text-white dark:bg-darkHover"
         >
           <div className="absolute right-5 top-7">
             <IoClose size={30} className="cursor-pointer" onClick={closeMenu} />
