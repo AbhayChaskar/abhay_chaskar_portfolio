@@ -57,12 +57,8 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           />
         </a>
         <ul
-          className={`hidden md:flex items-center gap-6 lg:gap-8 px-12 py-2.5 rounded-full ${
-            isScroll
-              ? ""
-              : "border border-gray bg-white shadow-md bg-opacity-50"
-          }`}
-        >
+          className={`hidden md:flex items-center gap-6 lg:gap-8 px-12 py-2.5 rounded-full
+            ${ isScroll ? "" : "border border-gray bg-white shadow-md bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent dark:shadow-white dark:shadow"}`}>
           <li>
             <a href="#home">Home</a>
           </li>
@@ -87,7 +83,6 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             {
                 isDarkMode ? <BsSunFill size={22} className="text-white/80" /> : <IoMoonSharp size={20} className="text-black/80" />
             }
-            
           </button>
           {isPdfDownload ? (
             <div className="hidden lg:flex items-center gap-2 px-3.5 py-2 border border-gray-400 text-black/80 rounded-full ml-4">
@@ -110,9 +105,9 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         {/* Side menu for small devices */}
         <ul
           ref={sideMenuRef}
-          className="flex md:hidden flex-col gap-4 px-10 py-20 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-gray-50 transition duration-500"
+          className="flex md:hidden flex-col gap-4 px-10 py-20 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-gray-50 transition duration-500 dark:text-white dark:bg-black/95"
         >
-          <div className="absolute right-5 top-4">
+          <div className="absolute right-5 top-7">
             <IoClose size={30} className="cursor-pointer" onClick={closeMenu} />
           </div>
           <li>
