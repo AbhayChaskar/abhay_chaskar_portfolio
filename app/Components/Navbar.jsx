@@ -91,7 +91,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           ) : (
             <a
               href="#resume"
-              className="hidden lg:flex items-center gap-3 px-6 py-2 border border-gray-400 rounded-full ml-4 bg-black/80 text-white hover:bg-black duration-500"
+              className="hidden lg:flex items-center gap-3 px-6 py-2 border border-gray-400 rounded-full ml-4 bg-black/80 text-white hover:bg-black duration-500 dark:border-none dark:bg-white/75 dark:hover:bg-white dark:duration-500 dark:text-black"
               onClick={handleResumeDownload}
             >
               Resume <FiDownload size={21} />

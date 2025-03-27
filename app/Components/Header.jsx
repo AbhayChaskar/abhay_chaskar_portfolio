@@ -22,7 +22,7 @@ const Header = () => {
       <h3 className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>Frontend/UI Developer</h3>
       <p className='max-w-2xl mx-auto'>I have over 4 years of full-time experience in the IT industry, where I have developed and managed SPAs using ReactJS and related libraries or frameworks.</p>
       <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
-        <a href='' className='py-2.5 px-6 w-max flex items-center gap-2 justify-between bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500' onClick={handleConnectButton}>Let's Connect <IoIosArrowDropright size={20}/></a>
+        <a href='' className='py-2.5 px-6 w-max flex items-center gap-2 justify-between bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:border-none dark:bg-white/75 dark:hover:bg-white dark:duration-500 dark:text-black' onClick={handleConnectButton}>Let's Connect <IoIosArrowDropright size={20}/></a>
       </div>
     </div>
   )
