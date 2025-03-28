@@ -48,7 +48,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
     <>
       <nav
         className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-1 flex items-center justify-between z-50 ${
-          isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/90 dark:bg-opacity-70" : ""}`}>
+          isScroll ? "bg-white bg-opacity-50 backdrop-blur-md shadow-sm dark:bg-darkTheme dark:shadow-white/90 dark:bg-opacity-70" : ""}`}>
         <a href="https://www.youtube.com/@Melvis47" target="_blank">
           <Image
             src={isDarkMode ? assets.logo_dark : assets.logo}
