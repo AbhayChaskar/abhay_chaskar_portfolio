@@ -12,7 +12,7 @@ const Skills = () => {
                 <li key={index} className='p-6 text-center cursor-pointer opacity-60 hover:-translate-y-2 hover:opacity-100 rounded-lg duration-300'>
                     <Image src={icon} alt={title} title={title} width={80} height={80} className='object-cover mx-auto'/>
                     {/* <h3 className='my-4 font-semibold text-gray-600'>{title}</h3> */}
-                    <h2 className='text-[18px] mt-4 text-black/70 font-semibold items-center'>{title}</h2>
+                    <h2 className='text-[18px] mt-4 text-black/80 font-semibold items-center dark:text-white/80'>{title}</h2>
                 </li>
             ))}
         </ul>
