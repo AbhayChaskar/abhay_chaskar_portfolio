@@ -33,7 +33,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-        <a href='' className='py-2 px-6 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500' onClick={handleExploreButton}>Know More <IoIosArrowDropright size={20}/></a>
+        <a href='' className='py-2 px-6 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:border-none dark:bg-white/80 dark:hover:bg-white dark:duration-500 dark:text-black' onClick={handleExploreButton}>Know More <IoIosArrowDropright size={20}/></a>
     </div>
   )
 }
