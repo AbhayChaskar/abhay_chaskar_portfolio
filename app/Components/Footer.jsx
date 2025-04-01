@@ -6,12 +6,12 @@ import { BsGithub } from "react-icons/bs";
 import { GrLinkedin } from "react-icons/gr";
 import { FaInstagram, FaRegCopyright, FaYoutube } from "react-icons/fa6";
 
-const Footer = () => {
+const Footer = ({ isDarkMode }) => {
   return (
     <div className='mt-12'>
         <div className='text-center'>
             <a href='https://www.youtube.com/@Melvis47' target='_blank' className='w-36 cursor-pointer mx-auto mb-2'>
-                <Image src= {assets.logo} alt='logo' className='w-24 cursor-pointer mx-auto mb-2'/>
+                <Image src={isDarkMode ? assets.logo_dark : assets.logo} alt='logo' className='w-24 cursor-pointer mx-auto mb-2'/>
             </a>
             <div className='w-max flex items-center text-black/80 gap-2 mx-auto dark:text-white/80'>
                 <IoIosMail size={27} className='text-black/80 dark:text-white/80'/> abhayrc.521@gmail.com
