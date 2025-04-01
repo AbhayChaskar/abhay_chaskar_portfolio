@@ -25,10 +25,10 @@ const Contact = () => {
 
         <form className='max-w-2xl mx-auto' action={handleFormSubmit}>
             <div className='grid grid-cols-2 gap-6 mt-10 mb-8'>
-                <input type='text' name="username" placeholder='Your Full Name' className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white shadow-md' required/>
-                <input type='email' name="email_Id" placeholder='Your Email ID' className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white shadow-md' required/>
+                <input type='text' name="username" placeholder='Your Full Name' className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white shadow-md dark:bg-darkHover dark:border-white/30' required/>
+                <input type='email' name="email_Id" placeholder='Your Email ID' className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white shadow-md dark:bg-darkHover dark:border-white/30' required/>
             </div>
-            <textarea rows='6' name='feedback' placeholder='Leave your Feedback here...' autoComplete='false' className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 shadow-md' required></textarea>
+            <textarea rows='6' name='feedback' placeholder='Leave your Feedback here...' autoComplete='false' className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 shadow-md dark:bg-darkHover dark:border-white/30' required></textarea>
             {username ? <h3 className='py-2 px-6 w-max flex items-center justify-between gap-2 text-black/80 rounded-full mx-auto duration-500'>Thanks<b>{username}</b>for your feedback...</h3> : <button type='submit' className='py-2 px-6 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:border-none dark:bg-white/80 dark:hover:bg-white dark:duration-500 dark:text-black'>Send <IoIosArrowDropright size={20}/> </button> }
         </form>
         
