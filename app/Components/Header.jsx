@@ -4,7 +4,7 @@ import React from 'react'
 import { useRouter } from "next/navigation";
 import { PiHandPeace } from "react-icons/pi";
 import { IoIosArrowDropright } from "react-icons/io";
-
+import { motion } from 'motion/react';
 const Header = () => {
   const router = useRouter();
 
