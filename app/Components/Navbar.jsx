@@ -6,6 +6,7 @@ import { IoMoonSharp } from "react-icons/io5";
 import { CgMenuRightAlt } from "react-icons/cg";
 import { IoClose } from "react-icons/io5";
 import { BsSunFill } from "react-icons/bs";
+import { motion } from 'motion/react';
 
 const Navbar = ({ isDarkMode, setIsDarkMode }) => {
   const sideMenuRef = useRef();
@@ -89,13 +90,13 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
               Downloading...
             </div>
           ) : (
-            <a
+            <motion.a initial={{y:30, opacity:0}} whileInView={{y:0, opacity:1}} transition={{duration: 0.6, delay: 1.2}}
               href="#resume"
               className="hidden lg:flex items-center gap-3 px-6 py-2 rounded-full ml-4 bg-black/80 text-white hover:bg-black duration-500 dark:border-none dark:bg-white/80 dark:hover:bg-white dark:duration-500 dark:text-black"
               onClick={handleResumeDownload}
             >
               Resume <FiDownload size={21} />
-            </a>
+            </motion.a>
           )}
           <button className="block md:hidden ml-3">
             <CgMenuRightAlt size={27} onClick={openMenu} />
