@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { PiHandPeace } from "react-icons/pi";
 import { IoIosArrowDropright } from "react-icons/io";
 import { motion } from 'motion/react';
+
 const Header = () => {
   const router = useRouter();
 
@@ -14,9 +15,9 @@ const Header = () => {
   
   return (
     <div id="home" className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4'>
-      <div>
+      <motion.div initial={{scale: 0}} whileInView={{scale: 1}} transition={{duration: 0.8, type: 'spring', stiffness: 100}}>
         <Image src={assets.profile_image} alt='profile_image' className='rounded-full w-32'/>
-      </div>
+      </motion.div>
 
       <h3 className='flex item-end gap-1.5 font-Ovo text-xl md:text-2xl mb-3 '>Hey! I'm Abhay Chaskar <PiHandPeace size={27}/></h3>
       <h3 className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>Frontend/UI Developer</h3>
