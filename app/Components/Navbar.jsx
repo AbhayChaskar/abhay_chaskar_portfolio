@@ -50,13 +50,13 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
       <nav
         className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-1 flex items-center justify-between z-50 ${
           isScroll ? "bg-white bg-opacity-50 backdrop-blur-md shadow-sm dark:bg-darkTheme dark:shadow-white/90 dark:bg-opacity-70" : ""}`}>
-        <a href="https://www.youtube.com/@Melvis47" target="_blank">
+        <motion.a initial={{scale: 0}} whileInView={{scale: 1}} transition={{duration: 0.8, type: 'spring', stiffness: 100}} href="https://www.youtube.com/@Melvis47" target="_blank">
           <Image
             src={isDarkMode ? assets.logo_dark : assets.logo}
             alt="logo"
             className="w-20 cursor-pointer mr-14"
           />
-        </a>
+        </motion.a>
         <ul
           className={`hidden md:flex items-center gap-6 lg:gap-8 px-12 py-2.5 rounded-full
             ${ isScroll ? "" : "border border-gray bg-white shadow-md bg-opacity-50 dark:border-darkHover dark:border-white/50 dark:bg-transparent dark:shadow-lightHover/20"}`}>
