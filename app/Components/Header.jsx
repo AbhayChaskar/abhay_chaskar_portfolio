@@ -10,7 +10,7 @@ const Header = () => {
   const router = useRouter();
 
   const handleConnectButton = () =>{
-    router.push('https://www.linkedin.com/in/abhaychaskar/');
+    router.push('https://www.linkedin.com/in/abhaychaskar');
   }
   
   return (
