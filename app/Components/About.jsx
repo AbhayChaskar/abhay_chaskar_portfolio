@@ -6,11 +6,11 @@ import { motion } from 'motion/react';
 const About = ({isDarkMode}) => {
   return (
     <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1}} id="about" className='w-full px-[12%] py-14 scroll-mt-20'>
-        <h2 className='text-center text-5xl font-Ovo'>About Me</h2>
-        <div className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
-            <div className='w-64 sm:w-80 rounded-3xl max-w-none'>
+        <motion.h2 initial={{opacity: 0, y: -20}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.5, delay: 0.5}} className='text-center text-5xl font-Ovo'>About Me</motion.h2>
+        <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.8}} className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
+            <motion.div initial={{opacity: 0, scale: 0.9}} whileInView={{opacity: 1, scale: 1}} transition={{duration: 0.6}} className='w-64 sm:w-80 rounded-3xl max-w-none'>
                 <Image src={assets.full_profile} alt='full_profile' className='w-full rounded-3xl'/>
-            </div>
+            </motion.div>
             <div className='flex-1'>
                 <p className='mb-10 max-w-2xl'>
                     An experienced Frontend Developer with strong discipline, a team-oriented mindset, excellent problem-solving abilities and great communication skills.
@@ -36,7 +36,7 @@ const About = ({isDarkMode}) => {
                     ))}
                 </ul>
             </div>
-        </div>
+        </motion.div>
     </motion.div>
   )
 }
