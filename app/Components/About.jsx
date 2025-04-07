@@ -1,10 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
 import { assets, aboutList, toolsData } from '@/assets/assets'
+import { motion } from 'motion/react';
 
 const About = ({isDarkMode}) => {
   return (
-    <div id="about" className='w-full px-[12%] py-14 scroll-mt-20'>
+    <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1}} id="about" className='w-full px-[12%] py-14 scroll-mt-20'>
         <h2 className='text-center text-5xl font-Ovo'>About Me</h2>
         <div className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
             <div className='w-64 sm:w-80 rounded-3xl max-w-none'>
@@ -36,7 +37,7 @@ const About = ({isDarkMode}) => {
                 </ul>
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 
